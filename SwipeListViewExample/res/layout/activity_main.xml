@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.swipelistviewexample.SwipeListView
+        android:id="@+id/example_swipe_lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#00000000"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeDrawableChecked="@drawable/choice_selected"
+        swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+        swipe:swipeFrontView="@+id/front"
+        swipe:swipeMode="both" />
+
+</LinearLayout>
